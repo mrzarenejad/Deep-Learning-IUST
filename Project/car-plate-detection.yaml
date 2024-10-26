@@ -1,0 +1,9 @@
+train: /content/car-plate-detection/images/train/ 
+val:  /content/car-plate-detection/images/val/
+test: /content/car-plate-detection/images/test/
+
+# number of classes
+nc: 1
+
+# class names
+names: ["licence"]
