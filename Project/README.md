@@ -1,6 +1,6 @@
 # Irainian-Car-license-plate-detection-
 
-# plate detection
+
 **The first step** 
 ------
 Based on the project requirements, we initially trained the model using a dataset of car images obtained from the Kaggle website, applying the YOLO algorithm to accurately detect each car's license plate.
