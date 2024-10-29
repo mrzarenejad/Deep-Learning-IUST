@@ -16,6 +16,7 @@ Once the model is trained, the resulting weights from the model are saved, and w
 The stored weights will later be used for the final license plate detection and, for convenience, will be transferred to Google Drive.
 
 ![Plate detection with YOLO](./car1.png)
+
 **The Second step** 
 ------
 In the second stage, using the dataset provided to us, we need to extract the characters of Iranian car license plates.
@@ -32,6 +33,7 @@ The network is trained using YOLOv5s, which provides satisfactory accuracy. Afte
 The obtained model can then be evaluated using test images to assess its performance.
 
 ![Plate detection with YOLO](./car3.png)
+
 **The Third step** 
 ------
 In the third stage, we need to combine both models obtained from the previous steps. This means first detecting the car's license plate and then, using the second model, extracting the plate's characters.
