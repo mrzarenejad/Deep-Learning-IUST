@@ -2,6 +2,7 @@
 
 # plate detection
 **The first step** 
+
 ------
 Based on the project requirements, we initially trained the model using a dataset of car images obtained from the Kaggle website, applying the YOLO algorithm to accurately detect each car's license plate.
 
@@ -17,8 +18,10 @@ The stored weights will later be used for the final license plate detection and,
 
 ![Plate detection with YOLO](./car1.png)
 
+----
 **The Second step** 
-------
+
+----
 In the second stage, using the dataset provided to us, we need to extract the characters of Iranian car license plates.
 
 To accomplish this, due to the large dataset size, we created a downloadable link for the dataset file via a Telegram bot and then uploaded it to the Colab environment using the necessary commands.
@@ -35,6 +38,7 @@ The obtained model can then be evaluated using test images to assess its perform
 ![Plate detection with YOLO](./car3.png)
 
 **The Third step** 
+
 ------
 In the third stage, we need to combine both models obtained from the previous steps. This means first detecting the car's license plate and then, using the second model, extracting the plate's characters.
 
@@ -48,6 +52,7 @@ It is observed that the first model effectively detects license plates on new im
 In the next step, we build the second model using the weights from the network responsible for character extraction. Now, we feed the detected license plate from the first model into the second model to extract the characters from it.
 
 **Final step** 
+
 ------
 ![Plate detection with YOLO](./car5.png)
 
