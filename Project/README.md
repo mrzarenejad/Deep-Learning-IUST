@@ -15,7 +15,7 @@ Once the model is trained, the resulting weights from the model are saved, and w
 
 The stored weights will later be used for the final license plate detection and, for convenience, will be transferred to Google Drive.
 
-[!Plate detection with YOLO]*(./car1.png)
+![Plate detection with YOLO](./car1.png)
 
 
 
