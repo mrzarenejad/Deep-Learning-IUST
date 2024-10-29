@@ -1,18 +1,21 @@
 # Car-license-plate-detection-
 
-<b>Ability to manually adjust the artificial neural network </b>
-
-
-
-
-
-
-
-
 # plate detection
-The first step in resolving plaque detection problems is to identify the plaque. In the first phase of LPR, a limiting box is produced that fits exactly where the license plate is located. This is the main condition for successful LPR. Therefore, LP diagnosis should be relatively accurate. In this article, we have used the opencv library as well as contour and edge finder to detect this bug.
+**The first step** 
+------
+Based on the project requirements, we initially trained the model using a dataset of car images obtained from the Kaggle website, applying the YOLO algorithm to accurately detect each car's license plate.
 
+A key step in this process involves converting the file format (from XML, containing coordinates of two points on the bounding rectangle around each license plate and the class of each object) to TXT format. The main point in this conversion is transforming the coordinates to obtain the center coordinates of the rectangle, along with its width, height, and the class types present in the image. In this stage, there is only one class, as we are focused solely on license plate detection.
 
+After downloading the dataset and converting the labeling format of the images, we proceed to train the model using the YOLO algorithm.
+
+Another important point in using the YOLO network is creating a file with a YAML extension, in which the dataset image paths and the classes to be mapped in the network should be specified.
+
+Once the model is trained, the resulting weights from the model are saved, and we evaluate the model using test images from the dataset. It can be observed that the bounding rectangles accurately identify the license plates in the images.
+
+The stored weights will later be used for the final license plate detection and, for convenience, will be transferred to Google Drive.
+
+[!Plate detection with YOLO]*(./car1.png)
 
 
 
